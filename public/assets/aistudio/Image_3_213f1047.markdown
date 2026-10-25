@@ -1,0 +1,219 @@
+---
+name: Google Workspace & News Editorial
+colors:
+  surface: '#f7f9ff'
+  surface-dim: '#d7dae0'
+  surface-bright: '#f7f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f1f4fa'
+  surface-container: '#ebeef4'
+  surface-container-high: '#e5e8ee'
+  surface-container-highest: '#dfe3e8'
+  on-surface: '#181c20'
+  on-surface-variant: '#414754'
+  inverse-surface: '#2d3135'
+  inverse-on-surface: '#eef1f7'
+  outline: '#727785'
+  outline-variant: '#c1c6d6'
+  surface-tint: '#005bc0'
+  primary: '#005bbf'
+  on-primary: '#ffffff'
+  primary-container: '#1a73e8'
+  on-primary-container: '#ffffff'
+  inverse-primary: '#adc7ff'
+  secondary: '#0054cd'
+  on-secondary: '#ffffff'
+  secondary-container: '#336ee7'
+  on-secondary-container: '#fefcff'
+  tertiary: '#006d2a'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#16893a'
+  on-tertiary-container: '#000701'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#d8e2ff'
+  primary-fixed-dim: '#adc7ff'
+  on-primary-fixed: '#001a41'
+  on-primary-fixed-variant: '#004493'
+  secondary-fixed: '#dae2ff'
+  secondary-fixed-dim: '#b2c5ff'
+  on-secondary-fixed: '#001847'
+  on-secondary-fixed-variant: '#0040a1'
+  tertiary-fixed: '#8ffa9b'
+  tertiary-fixed-dim: '#73dc82'
+  on-tertiary-fixed: '#002108'
+  on-tertiary-fixed-variant: '#00531e'
+  background: '#f7f9ff'
+  on-background: '#181c20'
+  surface-variant: '#dfe3e8'
+  google-red: '#D93025'
+  google-yellow: '#F9AB00'
+  google-green: '#1E8E3E'
+  surface-canvas: '#F8F9FA'
+  surface-topbar: '#FFFFFF'
+  surface-search: '#F1F3F4'
+  border-hairline: '#DADCE0'
+  container-blue: '#E8F0FE'
+  container-red: '#FCE8E6'
+  container-green: '#E6F4EA'
+  container-yellow: '#FEF7E0'
+  text-primary: '#1F1F1F'
+  text-secondary: '#444746'
+typography:
+  headline-xl:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 36px
+    fontWeight: '500'
+    lineHeight: 44px
+    letterSpacing: -0.02em
+  headline-xl-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '500'
+    lineHeight: 36px
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '500'
+    lineHeight: 36px
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 22px
+    fontWeight: '500'
+    lineHeight: 28px
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 22px
+    fontWeight: '500'
+    lineHeight: 28px
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '500'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Roboto Flex
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+    letterSpacing: 0.01em
+  body-md:
+    fontFamily: Roboto Flex
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+    letterSpacing: 0.015em
+  body-sm:
+    fontFamily: Roboto Flex
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+    letterSpacing: 0.02em
+  label-lg:
+    fontFamily: Roboto Flex
+    fontSize: 14px
+    fontWeight: '500'
+    lineHeight: 20px
+    letterSpacing: 0.01em
+  label-md:
+    fontFamily: Roboto Flex
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.03em
+  label-sm:
+    fontFamily: Roboto Flex
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0.04em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-desktop: 1.5rem
+  margin: 1rem
+  margin-tablet: 1.5rem
+  margin-desktop: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+This design system embraces modern Google Material Design 3 (M3) Web aesthetics, combining utilitarian clarity, expansive informational density, and welcoming human-centric geometry. 
+
+Targeted at daily knowledge workers, information seekers, and web application users, the interface evokes focus, high credibility, and effortless accessibility. The aesthetic centers on:
+- High-clarity white and light-neutral surfaces punctuated by purposeful brand accents.
+- Soft container fills that provide immediate category recognition and cognitive ease.
+- Precise, tactile interaction points grounded in standard Google ergonomics: pill controls, hairline borders, and fluid tonal feedback.
+
+## Colors
+The palette leverages Google's core chromatic spectrum anchored by a restrained light surface hierarchy.
+
+- **Primary (`#1A73E8`) & Deep Blue (`#0B57D0`)**: Used for focal actions, active selection states, navigation indicator lines, and primary callouts.
+- **Surface Foundations**: Canvas background rests on `#F8F9FA`, creating subtle contrast against elevated pure white (`#FFFFFF`) cards and header bars.
+- **Semantic Accent Containers**: Soft tints (`#E8F0FE`, `#FCE8E6`, `#E6F4EA`, `#FEF7E0`) designate state changes, categorization chips, and callout badges with low visual fatigue.
+- **Borders & Dividers**: Structured strictly with hairline gray (`#DADCE0`) for crisp boundary separation without heavy visual weight.
+- **Text & Glyphs**: Primary reading color is `#1F1F1F` for maximum legibility; supporting metadata and auxiliary icons default to `#444746` and `#5F6368`.
+
+## Typography
+Typography channels the clarity of Google Sans and standard Google web properties using **Plus Jakarta Sans** for rounded, friendly editorial headlines, and **Roboto Flex** for utilitarian body copy and compact UI tokens.
+
+- Display headers use medium (`500`) weights rather than heavy bolds to maintain a refined, professional publication posture.
+- Body copy is spaced for rapid vertical scanning, with optical letter-spacing calibrated for dense informational feeds.
+- Labels, tabs, and interactive chip controls use medium weight (`500`) with intentional tracking for distinct legibility at compact sizes.
+
+## Layout & Spacing
+The layout follows a fluid-responsive responsive structure aligned with Material 3 responsive grid guidance:
+
+- **Desktop (>= 1024px)**: 12-column layout with 24px gutters, max-width bounded to 1280px or 1440px for editorial feeds. App top bars stretch edge-to-edge, maintaining 32px safe outer padding.
+- **Tablet (600px - 1023px)**: 8-column layout with 16px to 24px gutters and 24px outer margins.
+- **Mobile (< 600px)**: 4-column layout with 16px gutters and 16px outer margins. Top search collapses from persistent pill to sticky icon/pill overlay.
+- Multi-feed layouts utilize an asymmetrical distribution (e.g., primary feed 8 columns, contextual sidebar 4 columns).
+
+## Elevation & Depth
+Elevation favors crisp boundary containment and subtle tonal contrast over dramatic drop shadows:
+
+- **Surface Layering**: The primary canvas rests at Level 0 (`#F8F9FA`). Content cards rest on Level 1 (`#FFFFFF`) with a 1px solid `#DADCE0` perimeter border.
+- **Top Bar & App Header**: Fixed top navigation sits at `#FFFFFF` with a bottom hairline border (`1px solid #DADCE0`). On scroll, introduce a subtle 4px blur ambient shadow: `0 1px 3px rgba(60, 64, 67, 0.08), 0 4px 8px rgba(60, 64, 67, 0.04)`.
+- **Search Bar**: Rest at Level 0 tonal contrast (`#F1F3F4` fill, borderless) transitioning on focus to Level 2 (`#FFFFFF` with `0 1px 6px rgba(32, 33, 36, 0.28)` and transparent border).
+- **Floating Controls & Modals**: Dropdown menus, tooltips, and dialogs utilize M3 elevation (`0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15)`).
+
+## Shapes
+Geometry emphasizes dual curvature scales:
+
+- **Cards & Content Containers**: Base geometry uses 16px (`rounded-xl` / 1rem to 1.5rem equivalent) to create friendly, distinct informational blocks.
+- **Inputs & Action Pills**: Search bars, interactive action buttons, and category chips utilize full pill roundedness (`9999px` / 100vh radius).
+- **Tooltips & Menus**: Internal menus and utility popovers use 8px (`rounded-md`) corners.
+
+## Components
+
+### Top Navigation & Search
+- **App Bar**: Clean `#FFFFFF` background, 64px height, bottom bordered with `#DADCE0`.
+- **Search Bar**: Pill-shaped container (`border-radius: 9999px`), 48px height, `#F1F3F4` resting background, no initial border. Leading search magnifying glass (`#5F6368`), centered placeholder text, trailing action icons. Expands cleanly on focus with white background and elevated drop shadow.
+
+### Buttons & Chips
+- **Primary Pill Button**: High-emphasis `#1A73E8` fill, white `#FFFFFF` label text, 36px to 40px height, full pill radius. Hover: `#1557B0`. Active ripple state.
+- **Tonal Button**: Container fill `#E8F0FE`, text `#1A73E8`, full pill radius.
+- **Filter / M3 Chips**: 32px height, fully rounded, bordered with `#DADCE0` on `#FFFFFF` base. Selected state swaps background to `#E8F0FE` and text/icon to `#0B57D0` with zero outline.
+
+### Navigation Tabs
+- Top level category tabs feature `#1F1F1F` text (500 weight), transparent padding, and an active indicator marked by a **3px thick Google Blue (`#1A73E8`) bar** directly anchored to the bottom divider.
+
+### Cards & Surfaces
+- **News / Content Card**: Pure white background (`#FFFFFF`), `16px` border-radius, hairline stroke `1px solid #DADCE0`. Hover state triggers a subtle elevation shadow `0 1px 3px rgba(60,64,67,0.12), 0 2px 6px rgba(60,64,67,0.08)` without altering border geometry.
+
+### Inputs & Selectors
+- **Text Inputs**: Outlined style with 4px border radius or pill style depending on context, resting `#DADCE0` outline, active state `#1A73E8` 2px border.
+- **Checkboxes & Radios**: Primary color `#1A73E8` when active, `#5F6368` outline when unselected. High-contrast white check indicator.

@@ -1,0 +1,6 @@
+{
+  "name": "PulseDaily",
+  "description": "Personalized AI news, architecture breakdowns, benchmark alerts, and audio briefings curated for software engineers and cloud architects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

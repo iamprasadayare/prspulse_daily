@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&amp;family=Roboto+Flex:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#dae2ff", "on-secondary-container": "#fefcff", "surface-bright": "#f7f9ff", "secondary": "#0054cd", "tertiary": "#006d2a", "surface": "#f7f9ff", "primary": "#005bbf", "surface-tint": "#005bc0", "on-tertiary-fixed-variant": "#00531e", "surface-container-lowest": "#ffffff", "container-red": "#FCE8E6", "surface-search": "#F1F3F4", "on-background": "#181c20", "on-primary-fixed-variant": "#004493", "container-green": "#E6F4EA", "outline-variant": "#c1c6d6", "on-primary-fixed": "#001a41", "primary-fixed": "#d8e2ff", "surface-container-high": "#e5e8ee", "primary-fixed-dim": "#adc7ff", "text-primary": "#1F1F1F", "surface-topbar": "#FFFFFF", "container-blue": "#E8F0FE", "surface-container-highest": "#dfe3e8", "text-secondary": "#444746", "surface-container": "#ebeef4", "on-primary": "#ffffff", "surface-container-low": "#f1f4fa", "primary-container": "#1a73e8", "surface-canvas": "#F8F9FA", "on-tertiary-container": "#000701", "on-error-container": "#93000a", "tertiary-fixed": "#8ffa9b", "inverse-on-surface": "#eef1f7", "on-surface": "#181c20", "on-secondary-fixed": "#001847", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#0040a1", "google-red": "#D93025", "secondary-container": "#336ee7", "on-surface-variant": "#414754", "surface-variant": "#dfe3e8", "on-tertiary-fixed": "#002108", "container-yellow": "#FEF7E0", "outline": "#727785", "background": "#f7f9ff", "on-tertiary": "#ffffff", "error": "#ba1a1a", "secondary-fixed-dim": "#b2c5ff", "surface-dim": "#d7dae0", "border-hairline": "#DADCE0", "tertiary-fixed-dim": "#73dc82", "google-yellow": "#F9AB00", "on-secondary": "#ffffff", "google-green": "#1E8E3E", "on-primary-container": "#ffffff", "tertiary-container": "#16893a", "inverse-surface": "#2d3135", "on-error": "#ffffff", "inverse-primary": "#adc7ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "margin-tablet": "1.5rem", "margin": "1rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter": "1rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Roboto Flex"], "body-lg": ["Roboto Flex"], "label-lg": ["Roboto Flex"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Roboto Flex"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Roboto Flex"], "headline-xl": ["Plus Jakarta Sans"], "label-md": ["Roboto Flex"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "500" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.015em", "fontWeight": "400" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface-canvas font-body-md text-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-topbar border-b border-border-hairline"><div class="h-16 px-6 flex items-center justify-between gap-4"><div class="flex items-center gap-3 shrink-0"><img alt="Google PulseDaily Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vtyh4RVT6dVG7xXlOZkhUxx4V-5eo68F8ZVIO851s8kDRf1WK5BnYRMekz-CDjDikxhDXdzq599paXB5kh879ASTbhPSMhsMpnEA6YU7fkflANmburWtBamsWqAsImFibjfSqBzEkQfcCaWIuC30ayx1XS0JfEQyu4z4ZlvCt-9ki7ow_8cOgS5QV8NlkhAK-G9SqvBVcJj8x-z2NoiCvC_qsefcM2eaA6M54qwaKwNytnsQ3FNPBN-Q"/><span class="hidden sm:inline font-headline-sm text-headline-sm text-text-primary tracking-tight font-medium">PulseDaily</span></div><div class="flex-1 max-w-2xl mx-4"><div class="w-full bg-surface-search rounded-full px-4 py-2 flex items-center gap-3 text-body-md font-body-md text-text-secondary transition-all hover:bg-surface-container focus-within:bg-surface-topbar focus-within:shadow-[0_1px_6px_rgba(32,33,36,0.28)]"><span class="material-symbols-outlined text-outline text-xl">search</span><input class="w-full bg-transparent border-0 outline-none text-body-md font-body-md text-text-primary placeholder:text-text-secondary" placeholder="Search AI topics, models, or sources..." type="text"/><div class="flex items-center gap-1.5 shrink-0"><button class="p-1 text-outline hover:text-on-surface rounded-full flex items-center justify-center" type="button"><span class="material-symbols-outlined text-xl">mic</span></button><button class="p-1 text-outline hover:text-on-surface rounded-full flex items-center justify-center" type="button"><span class="material-symbols-outlined text-xl">center_focus_strong</span></button></div></div></div><div class="flex items-center gap-2 shrink-0"><button class="p-2 text-outline hover:text-on-surface hover:bg-surface-search rounded-full transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-xl">help</span></button><div class="relative"><button class="p-2 text-outline hover:text-on-surface hover:bg-surface-search rounded-full transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-xl">notifications</span></button><span class="absolute top-1.5 right-1.5 w-4 h-4 bg-google-red text-surface-topbar font-label-sm text-label-sm font-semibold rounded-full flex items-center justify-center leading-none ring-2 ring-surface-topbar">3</span></div><button class="p-2 text-outline hover:text-on-surface hover:bg-surface-search rounded-full transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-xl">apps</span></button><div class="flex items-center gap-2 pl-2 py-1 pr-3 rounded-full hover:bg-surface-search transition-colors cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDinkTsykMrQ-NikWWpQ4gE9lKm-yeiTiifBXEqfJWwOr_9iYWE8gkrDZXSNaLh36Et4WisrRWicl6gC8psVzYy6fnZs_EGeyHM2jpGrMktPKr84Zj7FDufW9XqezP3TAxqpj_9CmUsab1mt-h9E63sAqZwSNz04zEz2wDFSJ8Qz_RKznjc6Plng95tgfPN_cr8YaPcbwvWZ--Sx7PHi-vT6li3Rc3FQnoWflXPoEI1z1l5wXjUAmeE"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-text-primary leading-tight">Alex Rivera</span><span class="font-label-sm text-label-sm text-text-secondary leading-tight">Software Engineer</span></div></div></div></div><div class="px-6 border-t border-border-hairline"><nav class="flex items-center justify-center space-x-2 overflow-x-auto h-12" data-active-classes="text-primary font-semibold border-b-[3px] border-primary"><a aria-current="page" class="h-full flex items-center px-4 hover:bg-surface-search transition-colors text-primary font-semibold border-b-[3px] border-primary" data-path="for-you" href="#">For you</a><a class="h-full flex items-center px-4 font-label-lg text-label-lg text-text-secondary hover:text-text-primary hover:bg-surface-search transition-colors" data-path="following" href="#">Following</a><a class="h-full flex items-center px-4 font-label-lg text-label-lg text-text-secondary hover:text-text-primary hover:bg-surface-search transition-colors" data-path="agentic-ai" href="#">Agentic AI</a><a class="h-full flex items-center px-4 font-label-lg text-label-lg text-text-secondary hover:text-text-primary hover:bg-surface-search transition-colors" data-path="cloud-and-infra" href="#">Cloud &amp; Infra</a><a class="h-full flex items-center px-4 font-label-lg text-label-lg text-text-secondary hover:text-text-primary hover:bg-surface-search transition-colors" data-path="product-and-strategy" href="#">Product &amp; Strategy</a></nav></div></header><main class="w-full pt-28 bg-surface-canvas min-h-[calc(100vh-140px)]"><div class="max-w-7xl mx-auto py-6 px-6"><div class="flex flex-col w-full">
+<!-- Content Container with Google News Layout -->
+<div class="space-y-6">
+<!-- 1. Greeting & Briefing Header ("Your briefing") -->
+<section class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div class="space-y-2">
+<div class="flex items-center gap-3 flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight font-medium">Your briefing</h1>
+<button class="inline-flex items-center gap-1.5 px-3 py-1 bg-container-blue text-primary font-label-md text-label-md rounded-full hover:bg-secondary-fixed transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">engineering</span>
+<span>Role Lens: Software Engineer</span>
+<span class="material-symbols-outlined text-[16px]">arrow_drop_down</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-text-secondary flex items-center gap-2">
+<span>Wednesday, October 24</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span>Curated for your tech stack &amp; cloud architecture focus</span>
+</p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-2.5 shrink-0 flex-wrap">
+<button class="inline-flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-full shadow-sm transition-all transform active:scale-95" id="briefingPlayBtn" type="button">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Listen to Daily Brief (2m)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg rounded-full transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">sync</span>
+<span class="hidden sm:inline">Regenerate</span>
+</button>
+</div>
+</section>
+<!-- 2. Breaking News Alert Banner (Material 3 Alert Container) -->
+<section class="bg-container-red rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-google-red text-white font-label-sm text-label-sm font-semibold tracking-wider animate-pulse shrink-0">
+          BREAKING
+        </span>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg text-text-primary font-medium truncate">
+            Anthropic releases Claude 3.5 Sonnet computer use capability &amp; autonomous agent API
+          </p>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            8m ago • 42 engineering benchmarks and community sources verified
+          </p>
+</div>
+</div>
+<a class="inline-flex items-center gap-1 text-google-red hover:opacity-80 font-label-lg text-label-lg font-medium shrink-0 group" href="#">
+<span>View live breakdown</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+</section>
+<!-- 3. 12-Column Google News Grid Layout -->
+<div class="grid grid-cols-12 gap-6 items-start">
+<!-- LEFT: 8 Columns ("Top stories" & Deep Technical AI Briefings) -->
+<main class="col-span-12 lg:col-span-8 space-y-4">
+<!-- Section Header Bar -->
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-text-primary font-medium">Top stories for you</h2>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 bg-container-blue text-primary rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+              Gemini 1.5 Pro
+            </span>
+</div>
+<button class="text-primary hover:text-secondary font-label-md text-label-md flex items-center gap-1" type="button">
+<span>Customize interests</span>
+<span class="material-symbols-outlined text-base">tune</span>
+</button>
+</div>
+<!-- Primary Feed Container -->
+<div class="bg-surface-topbar rounded-xl shadow-sm p-6 space-y-6">
+<!-- Story 1 (Featured Hero Story) -->
+<article class="space-y-4">
+<!-- Source Row -->
+<div class="flex items-center justify-between gap-2 flex-wrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-bold text-xs text-primary overflow-hidden">
+<span class="material-symbols-outlined text-base text-primary">neurology</span>
+</div>
+<span class="font-label-md text-label-md text-text-primary font-medium">Google DeepMind</span>
+<span class="text-text-secondary text-xs">•</span>
+<span class="font-label-sm text-label-sm text-text-secondary">35m ago</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-container-green text-google-green font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-xs">verified</span>
+                Grounded in 14 sources
+              </span>
+</div>
+<!-- Headline and Media Split -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+<div class="md:col-span-8 space-y-2">
+<h3 class="font-headline-md text-headline-md text-text-primary font-medium hover:text-primary transition-colors cursor-pointer leading-snug">
+                  Gemini 1.5 Pro Extends Context Window to 2M Tokens with Native Multi-Agent Orchestration Framework
+                </h3>
+<p class="font-body-md text-body-md text-text-secondary line-clamp-2">
+                  Google DeepMind rolls out production context scaling alongside an asynchronous parallel agent protocol designed to orchestrate long-horizon reasoning over production codebases.
+                </p>
+</div>
+<div class="md:col-span-4">
+<div class="w-full h-32 rounded-lg bg-surface-container-low overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Futuristic high-tech visual representation of neural network token pipelines with luminous blue Google-inspired light paths, mathematical tensors floating in a clean minimal data center interface, crisp and photorealistic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHscsideA8e9vG8OowsyW6M8vY7AxyCjiRw8KlOcrkyap6S1UoaisybdSRaGxkJ9vvzpo3WWI35FCFdvttkHGCddH8A9PiOF7I2XCUKZTqOIJKRSdMArrKbmVTbIKKYNhSKTxa9kGjLcKnDldGAnpq0qOr3YL0oNiQMRtVhx6axHdA0MTRGikuPkngVokSXHN6NwGVh-unNBU-ttuYct3I-eV1SAKm2DIu5zsf172IPJUW8OSBt86d"/>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 bg-inverse-surface/80 backdrop-blur-sm text-surface-topbar rounded text-[10px] font-label-sm font-mono">
+                    2.0M Ctx
+                  </div>
+</div>
+</div>
+</div>
+<!-- 3-Bullet Gemini TL;DR -->
+<div class="bg-surface-canvas rounded-lg p-3.5 space-y-2">
+<div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-medium">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>Developer Highlights</span>
+</div>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-text-secondary">
+<li class="flex items-start gap-2">
+<span class="text-primary font-bold mt-0.5">•</span>
+<span><strong class="text-text-primary font-medium">Native function calling latency reduced by 48%</strong> across distributed cloud microservices with streaming token tool calling.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary font-bold mt-0.5">•</span>
+<span><strong class="text-text-primary font-medium">Long-context retrieval benchmark scores 99.7%</strong> needle-in-a-haystack recall across the full 2M token span.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary font-bold mt-0.5">•</span>
+<span><strong class="text-text-primary font-medium">Direct Google Cloud Vertex AI SDK integration</strong> is available today with multi-modal audio/video telemetry.</span>
+</li>
+</ul>
+</div>
+<!-- Material 3 Tonal Box: Why This Matters for You -->
+<div class="bg-container-blue rounded-xl p-4 flex gap-3">
+<span class="material-symbols-outlined text-primary text-xl shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<div class="space-y-1 min-w-0">
+<span class="font-label-md text-label-md text-primary font-semibold block">
+                  Why this matters for your role (Software Engineer)
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface font-medium">Architecture impact:</strong> You can now eliminate intermediate vector databases for medium-sized repositories (&lt;1.5M tokens) and execute unified multi-turn code refactoring across entire monorepos without chunking loss.
+                </p>
+</div>
+</div>
+<!-- Story 1 Footer Controls -->
+<div class="flex items-center justify-between pt-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-base">chrome_reader_mode</span>
+<span>Full coverage (18 articles)</span>
+</button>
+<div class="flex items-center gap-1 text-text-secondary">
+<button aria-label="Bookmark" class="p-2 hover:bg-surface-container rounded-full transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-lg">bookmark</span>
+</button>
+<button aria-label="Share" class="p-2 hover:bg-surface-container rounded-full transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-lg">share</span>
+</button>
+<button aria-label="Thumbs up" class="p-2 hover:bg-surface-container rounded-full transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-lg">thumb_up</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Divider -->
+<div class="h-px w-full bg-surface-container-high"></div>
+<!-- Story 2 (Core Infrastructure / Agentic AI) -->
+<article class="space-y-4">
+<!-- Source Row -->
+<div class="flex items-center justify-between gap-2 flex-wrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-bold text-xs text-secondary overflow-hidden">
+<span class="material-symbols-outlined text-base text-secondary">memory</span>
+</div>
+<span class="font-label-md text-label-md text-text-primary font-medium">Hugging Face &amp; PyTorch</span>
+<span class="text-text-secondary text-xs">•</span>
+<span class="font-label-sm text-label-sm text-text-secondary">2h ago</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-container-green text-google-green font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-xs">verified</span>
+                Grounded in 8 sources
+              </span>
+</div>
+<!-- Headline -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+<div class="md:col-span-8 space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium hover:text-primary transition-colors cursor-pointer leading-snug">
+                  vLLM v0.6 Released with PagedAttention v3: 2.7x Throughput Spike for MoE Models
+                </h3>
+<p class="font-body-md text-body-md text-text-secondary line-clamp-2">
+                  The latest serving engine update slashes first-token time down to 12ms and supports multi-LoRA switching on concurrent high-volume batch queries.
+                </p>
+</div>
+<div class="md:col-span-4">
+<div class="w-full h-28 rounded-lg bg-surface-container-low overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Technical chart diagram representing high speed GPU cluster memory throughput benchmarks, sleek modern dark gray UI with vibrant Google blue and green metric bars showing performance scaling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb9tOSN3TeGeZjItwTv37Ve9-mTssVWgb04H_XhS6G-sbgdivh-ZMqVaj2EUuaVRZMuPSQ0egJPURDUVkHhrtL5ZnuHYAXcdJRpiYpC113Eec56Kj0D3UJqspH0lHVmRBeZk1Gb8L1i0e_i_pjo3y0KjmHuk3IfNmT8Ub9S-6WxDpPAfNeYyoPMlnU_mAQhQVjcNOD__N9NSBRv-h7Pmm-jNkZYOx8JPpg5XSSiZUMKdvEuHKfRhz4"/>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 bg-inverse-surface/80 backdrop-blur-sm text-surface-topbar rounded text-[10px] font-label-sm font-mono">
+                    2.7x Spk
+                  </div>
+</div>
+</div>
+</div>
+<!-- Bullets -->
+<div class="bg-surface-canvas rounded-lg p-3.5 space-y-2">
+<ul class="space-y-1.5 font-body-sm text-body-sm text-text-secondary">
+<li class="flex items-start gap-2">
+<span class="text-primary font-bold mt-0.5">•</span>
+<span><strong class="text-text-primary font-medium">Kernel-level optimizations:</strong> Custom CUDA kernels for FlashAttention-3 provide zero-copy memory swapping.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary font-bold mt-0.5">•</span>
+<span><strong class="text-text-primary font-medium">OpenAI spec compliant:</strong> Drop-in proxy replacement with continuous batching and speculative decoding.</span>
+</li>
+</ul>
+</div>
+<!-- Why This Matters -->
+<div class="bg-container-blue rounded-xl p-4 flex gap-3">
+<span class="material-symbols-outlined text-primary text-xl shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">speed</span>
+<div class="space-y-1 min-w-0">
+<span class="font-label-md text-label-md text-primary font-semibold block">
+                  Why this matters for your role (Software Engineer)
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface font-medium">Deployment optimization:</strong> Drastically cuts inference GPU memory overhead on H100 clusters; drop-in replacement for existing OpenAI-compatible serving endpoints.
+                </p>
+</div>
+</div>
+<!-- Footer -->
+<div class="flex items-center justify-between pt-1">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-base">chrome_reader_mode</span>
+<span>Full coverage (11 articles)</span>
+</button>
+<div class="flex items-center gap-1 text-text-secondary">
+<button aria-label="Bookmark" class="p-2 hover:bg-surface-container rounded-full transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-lg">bookmark</span>
+</button>
+<button aria-label="Share" class="p-2 hover:bg-surface-container rounded-full transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-lg">share</span>
+</button>
+<button aria-label="Thumbs up" class="p-2 hover:bg-surface-container rounded-full transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-lg">thumb_up</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Divider -->
+<div class="h-px w-full bg-surface-container-high"></div>
+<!-- Story 3 (Web Standards & Model APIs) -->
+<article class="space-y-4">
+<!-- Source Row -->
+<div class="flex items-center justify-between gap-2 flex-wrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-bold text-xs text-primary overflow-hidden">
+<span class="material-symbols-outlined text-base text-primary">public</span>
+</div>
+<span class="font-label-md text-label-md text-text-primary font-medium">W3C &amp; Chrome Dev</span>
+<span class="text-text-secondary text-xs">•</span>
+<span class="font-label-sm text-label-sm text-text-secondary">4h ago</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-container-green text-google-green font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-xs">verified</span>
+                Grounded in 6 sources
+              </span>
+</div>
+<!-- Headline -->
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium hover:text-primary transition-colors cursor-pointer leading-snug">
+                Prompt API for Gemini Nano in Chrome Reaches Early Preview for Local Web AI Tasks
+              </h3>
+<p class="font-body-md text-body-md text-text-secondary">
+                Developers can now execute client-side text summarization, proofreading, and intent classification directly inside Chrome without sending network payloads to external servers.
+              </p>
+</div>
+<!-- Why This Matters -->
+<div class="bg-container-blue rounded-xl p-4 flex gap-3">
+<span class="material-symbols-outlined text-primary text-xl shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<div class="space-y-1 min-w-0">
+<span class="font-label-md text-label-md text-primary font-semibold block">
+                  Why this matters for your role (Software Engineer)
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface font-medium">Zero-cost client execution:</strong> Enables offline-ready web applications and sensitive client-data processing while completely bypassing API cloud token costs.
+                </p>
+</div>
+</div>
+<!-- Footer -->
+<div class="flex items-center justify-between pt-1">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-base">chrome_reader_mode</span>
+<span>Full coverage (9 articles)</span>
+</button>
+<div class="flex items-center gap-1 text-text-secondary">
+<button aria-label="Bookmark" class="p-2 hover:bg-surface-container rounded-full transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-lg">bookmark</span>
+</button>
+<button aria-label="Share" class="p-2 hover:bg-surface-container rounded-full transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-lg">share</span>
+</button>
+<button aria-label="Thumbs up" class="p-2 hover:bg-surface-container rounded-full transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-lg">thumb_up</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</main>
+<!-- RIGHT: 4 Columns ("Breaking Alert Radar", "Saved Reading", "Daily Audio") -->
+<aside class="col-span-12 lg:col-span-4 space-y-6">
+<!-- CARD 1: Breaking Alert Radar -->
+<div class="bg-surface-topbar rounded-xl shadow-sm p-5 space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium">Breaking Alert Radar</h3>
+</div>
+<span class="text-xs px-2 py-0.5 rounded-full bg-container-green text-google-green font-label-sm font-semibold">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            Real-time threshold triggers monitored across arXiv, GitHub releases, and model registries.
+          </p>
+<!-- Tracking Topic Chips -->
+<div class="space-y-2">
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-canvas hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5 min-w-0">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="font-label-md text-label-md text-text-primary truncate font-medium">🤖 Agentic Frameworks</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary bg-surface-topbar px-2 py-0.5 rounded shadow-2xs">12/day</span>
+</label>
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-canvas hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5 min-w-0">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="font-label-md text-label-md text-text-primary truncate font-medium">⚡ Latency &amp; Inference Benchmarks</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary bg-surface-topbar px-2 py-0.5 rounded shadow-2xs">5/day</span>
+</label>
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-canvas hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5 min-w-0">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="font-label-md text-label-md text-text-primary truncate font-medium">🛡️ AI Security &amp; Red-Teaming</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary bg-surface-topbar px-2 py-0.5 rounded shadow-2xs">3/day</span>
+</label>
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-canvas hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5 min-w-0">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="font-label-md text-label-md text-text-primary truncate font-medium">⚖️ Open Source LLM Weights</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary bg-surface-topbar px-2 py-0.5 rounded shadow-2xs">8/day</span>
+</label>
+</div>
+<button class="w-full py-2 px-3 text-center text-primary font-label-md text-label-md font-medium hover:bg-container-blue rounded-lg transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+<span>Add custom topic radar</span>
+</button>
+</div>
+<!-- CARD 2: Gemini Daily Audio Brief Player -->
+<div class="bg-surface-topbar rounded-xl shadow-sm p-5 space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">podcasts</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium">Daily Audio Brief</h3>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary">Ep. 142</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            AI-narrated synthesis of top engineering pull requests and architecture papers.
+          </p>
+<!-- Animated Audio Waveform (Inline SVG) -->
+<div class="bg-surface-canvas rounded-lg p-3 space-y-2">
+<div class="flex items-center justify-between text-xs font-label-sm text-text-secondary font-mono">
+<span id="audioCurrentTime">00:44</span>
+<span>02:18</span>
+</div>
+<!-- Waveform SVG Container -->
+<div class="w-full h-8 flex items-center gap-1 justify-between px-1">
+<div class="w-1 bg-primary rounded-full h-3 animate-pulse"></div>
+<div class="w-1 bg-primary rounded-full h-6 animate-pulse" style="animation-delay: 100ms;"></div>
+<div class="w-1 bg-primary rounded-full h-4 animate-pulse" style="animation-delay: 200ms;"></div>
+<div class="w-1 bg-primary rounded-full h-7 animate-pulse" style="animation-delay: 300ms;"></div>
+<div class="w-1 bg-primary rounded-full h-5 animate-pulse" style="animation-delay: 150ms;"></div>
+<div class="w-1 bg-primary rounded-full h-2 animate-pulse"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-5"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-8"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-4"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-6"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-3"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-5"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-2"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-4"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-7"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-3"></div>
+</div>
+<!-- Player Controls -->
+<div class="flex items-center justify-between pt-1">
+<button class="px-2 py-0.5 rounded text-xs font-label-sm font-medium text-text-secondary hover:bg-surface-container" type="button">
+                1.0x
+              </button>
+<div class="flex items-center gap-2">
+<button class="p-1.5 hover:bg-surface-container rounded-full text-text-secondary flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-lg">replay_10</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-primary hover:bg-primary-container text-on-primary flex items-center justify-center shadow-sm" id="audioPlayToggle" type="button">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container rounded-full text-text-secondary flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-lg">forward_10</span>
+</button>
+</div>
+<button class="p-1.5 hover:bg-surface-container rounded-full text-text-secondary flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-lg">queue_music</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Saved Reading List -->
+<div class="bg-surface-topbar rounded-xl shadow-sm p-5 space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-google-yellow text-xl" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium">Saved for later</h3>
+</div>
+<a class="text-xs text-primary hover:underline font-label-md" href="#">View all (7)</a>
+</div>
+<div class="space-y-3">
+<!-- Article 1 -->
+<div class="group p-2.5 rounded-lg hover:bg-surface-canvas transition-colors flex items-start justify-between gap-3 cursor-pointer">
+<div class="space-y-1 min-w-0">
+<h4 class="font-label-lg text-label-lg font-medium text-text-primary group-hover:text-primary transition-colors leading-snug line-clamp-2">
+                  System Design: Fault-Tolerant Distributed RAG Architecture
+                </h4>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-text-secondary">
+<span>MIT Tech Review</span>
+<span>•</span>
+<span>7m read</span>
+</div>
+</div>
+<button aria-label="Open article" class="text-text-secondary hover:text-text-primary p-1 shrink-0" type="button">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+<!-- Article 2 -->
+<div class="group p-2.5 rounded-lg hover:bg-surface-canvas transition-colors flex items-start justify-between gap-3 cursor-pointer">
+<div class="space-y-1 min-w-0">
+<h4 class="font-label-lg text-label-lg font-medium text-text-primary group-hover:text-primary transition-colors leading-snug line-clamp-2">
+                  KV Cache Compression Techniques in Modern Production
+                </h4>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-text-secondary">
+<span>arXiv AI</span>
+<span>•</span>
+<span>12m read</span>
+</div>
+</div>
+<button aria-label="Open article" class="text-text-secondary hover:text-text-primary p-1 shrink-0" type="button">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+<!-- Article 3 -->
+<div class="group p-2.5 rounded-lg hover:bg-surface-canvas transition-colors flex items-start justify-between gap-3 cursor-pointer">
+<div class="space-y-1 min-w-0">
+<h4 class="font-label-lg text-label-lg font-medium text-text-primary group-hover:text-primary transition-colors leading-snug line-clamp-2">
+                  Comparing Llama 3.2 1B/3B on Edge Devices vs WebAssembly
+                </h4>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-text-secondary">
+<span>Latent Space</span>
+<span>•</span>
+<span>5m read</span>
+</div>
+</div>
+<button aria-label="Open article" class="text-text-secondary hover:text-text-primary p-1 shrink-0" type="button">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for audio player pause/play toggle
+  const playToggle = document.getElementById('audioPlayToggle');
+  const briefingBtn = document.getElementById('briefingPlayBtn');
+  let isPlaying = true;
+
+  function togglePlayState() {
+    isPlaying = !isPlaying;
+    const icon = playToggle ? playToggle.querySelector('span') : null;
+    if (icon) {
+      icon.textContent = isPlaying ? 'pause' : 'play_arrow';
+    }
+  }
+
+  if (playToggle) {
+    playToggle.addEventListener('click', togglePlayState);
+  }
+  if (briefingBtn) {
+    briefingBtn.addEventListener('click', () => {
+      togglePlayState();
+      playToggle.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  }
+</script></div></main><footer class="w-full bg-surface-topbar border-t border-border-hairline py-6"><div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 font-label-md text-label-md text-text-secondary"><div>© 2025 Google PulseDaily. All rights reserved.</div><div class="flex items-center gap-6"><a class="hover:text-text-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-text-primary transition-colors" href="#">Terms of Service</a><a class="hover:text-text-primary transition-colors" href="#">Feedback</a></div></div></footer></body></html>
